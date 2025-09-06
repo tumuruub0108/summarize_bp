@@ -1,1 +1,63 @@
 ARCHITECTURES
+Distributed systems are often complex pieces of software of which the components are by definition dispersed across multiple machines.
+Distributed systems нь ихэвчлэн олон машин дээр тархсан бүрэлдэхүүн хэсгүүдээс бүрдэх, нарийн төвөгтэй програм хангамж байдаг."
+
+The organization of distributed systems is mostly about the software components that constitute the system.These software architectures tell us how the
+various software components are to be organized and how they should interact. The actual realization of a distributed system requires that we instantiate and
+place software components on real machines. The final instantiation of a software architecture is also referred to as a system architecture. an important goal of distributed systems is to separate applications from underlying platforms by providing a middleware layer.
+
+
+2.1 ARCHITECTURAL STYLES
+A component is a modular unit with well-defined required and provided interfaces that is replaceable within its environmen
+
+distributed systems are:
+1. Layered architectures
+2. Object-based architectures
+3. Data-centered architectures
+4. Event-based architectures
+
+The basic idea for the layered style is simple:components are organized in a layered fashion where a component at layer L; is allowed to call components at the underlying layer L
+
+"Давхаргат хэв маягийн үндсэн санаа нь энгийн: бүрэлдэхүүнүүдийг давхаргын хэлбэрээр зохион байгуулдаг бөгөөд L давхаргын бүрэлдэхүүн нь зөвхөн өөрийн доор байрлах L–1 давхаргын бүрэлдэхүүнд хандах эрхтэй байдаг."
+
+
+Data-centered architectures evolve around the idea that processes communicate through a common (passive or active) repository. It can be argued that for distributed systems these architectures are as important as the layered and object based architectures.
+
+"Өгөгдөл төвтэй архитектур гэдэг нь процессууд хоорондоо харилцахдаа нэг нийтлэг хадгалах сан ашигладаг гэсэн санаа. Тархсан системүүдийн хувьд энэ архитектур нь давхаргат болон объект төвтэй архитектурууд шиг л чухал."
+
+
+In event-based architectures, processes essentially communicate through the propagation of events, which optionally also carry data.
+
+"event-based архитектурт процессууд үндсэндээ үйл явдлуудыг дамжуулснаар харилцдаг бөгөөд эдгээр үйл явдалд шаардлагатай бол өгөгдөл ч агуулж болно"
+
+The basic idea is that processes publish events after which the middleware ensures that only those processes that subscribed to those events will receive them.
+
+"Үндсэн санаа нь процессууд үйл явдлыг нийтэлдэг бөгөөд дараа нь middleware нь зөвхөн тухайн үйл явдалд бүртгүүлсэн процессууд л түүнийг хүлээн авахыг хангадаг."
+
+👉 Нэг нь мэдэгдэл гаргадаг (publish), харин зөвхөн сонирхсон хүмүүс нь мэдэгдэл авдаг (subscribe).
+
+The main advantage of event-based systems is that processes are loosely coupled
+
+"Үйл явдалд суурилсан sсистемийн гол давуу тал нь процессууд хоорондоо сул холбоотой байдаг"
+
+
+Event-based architectures can be combined with data-centered architectures, yielding what is also known as shared data spaces.
+
+"Event-based архитектурыг data-centered архитектуртай хослуулснаар, 'хамтарсан өгөгдлийн орон зай' (shared data spaces) гэж нэрлэгддэг загвар бий болдог."
+
+2.2 SYSTEM ARCHITECTURES
+
+2.2.1 Centralized Architectures
+
+Хэдийгээр distributed system талаар санал зөрөлдөөн их байдаг ч, клиент–серверийн загвараар бодох нь хамгийн ойлгомжтой бөгөөд удирдахад хялбар арга гэж ихэнх хүмүүс үздэг.
+
+whenever a client requests a service, it first sets up a connection to the server before sending the request.The server generally uses that same connection to send the reply message, after which the connection is torn down.
+
+1. The user-interface level
+2. The processing level
+3. The data level
+
+The user-interface level contains all that is necessary to directly interface with the user, such as display management. The processing level typically contains the applications. The data level manages the actual data that is being acted on.
+
+
+Structured Peer-to-Peer Architectures
