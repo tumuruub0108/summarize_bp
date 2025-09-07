@@ -1,0 +1,302 @@
+Introduction (1–2 minutes)
+
+Good evening, everyone.
+Today, I’ll be talking about Chapter 5: Naming from Distributed Systems: Principles and Paradigms 
+
+When we think about distributed systems—systems where multiple computers work together as one—one of the biggest challenges is: how do we find and access resources? Whether it’s a file on another computer, a web service, or a printer in another office, we need a way to identify, locate, and connect to it.
+
+This is where naming comes in. Naming provides the essential mechanism to map human-readable labels to actual objects in a system. In the next 15 minutes, I’ll explain what naming is, the types of names, how resolution works, the main naming systems, some real-world examples, and the challenges we face when designing naming services.
+
+
+1. What is Naming? (2 minutes)
+
+At its core, naming is about assigning labels to objects so that they can be found and used. Objects could be files, processes, devices, or even services in the cloud.
+
+Think about the Internet. You don’t type an IP address like 142.250.190.78 into your browser—you type google.com. That’s naming at work. The system resolves the name into an actual network address so you can connect to the right server.
+
+Without naming, distributed systems would be too complex to use. Imagine trying to memorize hundreds of IP addresses instead of simple domain names.
+
+2. Why Naming Matters (2 minutes)
+
+Naming plays several critical roles in distributed systems:
+
+It enables resource discovery. Users and programs can find resources without knowing exactly where they are stored.
+
+It simplifies interaction. Human-readable names are much easier to use than raw identifiers.
+
+It supports mobility. Resources like processes or virtual machines can move between machines, but the name stays the same.
+
+It provides the foundation for directories and higher-level services, such as LDAP or Active Directory, which organize and manage resources on a large scale.
+
+In short, naming makes distributed systems usable, scalable, and flexible.
+
+3. Types of Names (2 minutes)
+
+In the book, three important categories of names are described:
+
+Identifiers – These are unique and permanent labels for objects. For example, a process ID or a UUID. Once assigned, they are never reused.
+
+Addresses – These tell us where the object is located, such as an IP address pointing to a server.
+
+Human-readable names – These are the names people actually use, like google.com or /home/user/file.txt.
+
+A key insight here is that while identifiers are stable and unique, addresses may change, and names are designed for humans. Distributed systems must manage the mappings between all three.
+
+4. Name Resolution (2 minutes)
+
+Naming would be useless without resolution. Resolution is the process of translating a human-readable name into the actual identifier or address of the resource.
+
+The best-known example is the Domain Name System, or DNS. When you type www.example.com
+, DNS resolves it into the correct IP address so your computer can connect to the server.
+
+In distributed systems, resolution is typically handled by specialized naming services. These services are designed to be scalable, fault-tolerant, and efficient, because millions of lookups can happen every second.
+
+
+5. Naming Systems (2–3 minutes)
+
+The book describes several approaches to structuring names:
+
+Flat naming: No structure, just unique identifiers. This works for small systems but does not scale well.
+
+Hierarchical naming: A tree-like structure. DNS is the classic example. It organizes names into domains, making management easier and scalable.
+
+Attribute-based naming: Instead of using a fixed label, you search for resources by properties, such as “find all printers on the second floor.” This is very powerful for dynamic and large environments.
+
+Each system has trade-offs. Flat naming is simple, hierarchical naming is scalable, and attribute-based naming is flexible but complex to implement.
+
+
+6. Directory and Lookup Services (2 minutes)
+
+Beyond just resolution, many systems need directories that store rich information about resources.
+
+For example:
+
+LDAP or Active Directory in enterprise environments. These don’t just map names to addresses, but also store attributes like permissions, group memberships, or roles.
+
+These services support queries, updates, and replication so that they remain consistent across multiple servers.
+
+Directories are crucial when distributed systems scale to thousands or millions of resources.
+
+
+
+Conclusion (1–2 minutes)
+
+
+Naming is a fundamental concept in distributed systems. It allows us to assign labels to objects, resolve those labels to identifiers or addresses, and manage them at scale. We explored the types of names, how resolution works, the different naming systems, and the challenges we face.
+
+The importance of naming cannot be overstated—without it, distributed systems as we know them would simply not work. Systems like DNS, LDAP, and distributed file system naming schemes make the modern Internet and enterprise computing possible.
+
+Thank you for your attention. I’d be happy to answer any questions.
+
+
+
+
+🎤 15 минутын илтгэл
+
+Distributed Systems: Principles and Paradigms
+5-р бүлэг: Naming (Нэршил)
+
+Оршил (1–2 минут)
+
+Сайн байна уу? Өнөөдөр би Distributed Systems: Principles and Paradigms номын 5-р бүлэг – Naming (Нэршил) сэдвээр танилцуулга хийх гэж байна.
+
+Тархсан систем буюу distributed system гэдэг нь олон бие даасан компьютерүүдийг нэгэн бүхэл систем мэт ажиллуулдаг ойлголт. Харин ийм системд хамгийн том асуудлуудын нэг бол: Бид нөөцөө хэрхэн олох, хандах вэ?
+
+Файл, үйл явц, төхөөрөмж эсвэл алсын үйлчилгээ гээд бүгдийг тодорхойлохын тулд бидэнд нэршлийн систем хэрэгтэй болдог. Өөрөөр хэлбэл, Naming гэдэг нь хүний ойлгоход хялбар нэрийг систем доторх бодит объекттой холбох үйл явц юм.
+
+1. Naming гэж юу вэ? (2 минут)
+
+Naming бол объектуудад нэр өгч, түүгээр нь хялбархан таних арга юм. Объект гэдэгт файл, үйл явц, төхөөрөмж, эсвэл cloud-д байрлах үйлчилгээ ч багтана.
+
+Жишээлбэл, интернет дээр бид 142.250.190.78 гэх мэт IP хаягийг санахын оронд google.com гэж бичдэг. Энэ бол нэршлийн системийн ачаар боломжтой зүйл.
+
+Хэрэв naming байхгүй бол тархсан системийг ашиглахад хэтэрхий төвөгтэй байх байсан.
+
+2. Naming-ийн ач холбогдол (2 минут)
+
+Naming-ийн гол ач холбогдолууд нь:
+
+Нөөц хайлт (resource discovery) – хэрэглэгч болон програмууд яг хаана байгааг мэдэхгүй байсан ч нөөцөө олох боломжтой.
+
+Хялбаршуулах – хүний ойлгоход хялбар нэр ашиглах нь IP эсвэл кодоос илүү ойлгомжтой.
+
+Хөдөлгөөнт чанар – нөөц өөр сервер рүү шилжсэн ч нэр өөрчлөгдөхгүй.
+
+Скалабель чанар ба лавлах үйлчилгээ – LDAP, Active Directory гэх мэт лавлахууд нэршил дээр суурилж ажилладаг.
+
+3. Нэрийн төрлүүд (2 минут)
+
+Номонд гурван үндсэн нэрийг ялгаж тайлбарласан байдаг:
+
+Identifier (Тодорхойлогч): Давтагдашгүй, байнга нэг объекттой холбоотой. Жишээ нь process ID.
+
+Address (Хаяг): Объект хаана байгааг заадаг. Жишээ нь IP хаяг.
+
+Human-readable name (Хүний ойлгоход хялбар нэр): Жишээ нь google.com эсвэл /home/user/file.txt.
+
+Тархсан системд эдгээр гурван ойлголтыг зөв холбож ажиллуулах нь чухал.
+
+4. Нэр хувиргалт (Name Resolution) (2 минут)
+
+Naming-ийн гол үүрэг бол нэрийг бодит хаяг эсвэл тодорхойлогч болгон хувиргах явдал юм.
+
+Жишээ нь, бид www.example.com
+ гэж бичихэд DNS систем түүнийг IP хаяг болгон хувиргаж өгдөг. Энэ үйл явцыг name resolution гэнэ.
+
+Ийм хувиргалтыг нэршлийн тусгай үйлчилгээ гүйцэтгэдэг бөгөөд тэдгээр нь хурдтай, найдвартай, өргөтгөх боломжтой байх шаардлагатай.
+
+5. Naming системүүд (2–3 минут)
+
+Нэршлийг хэрэгжүүлэх олон арга бий:
+
+Flat naming: Зөвхөн нэг давхаргын, бүтэцгүй нэршил. Жижиг системд тохиромжтой ч масштаблахад хүндрэлтэй.
+
+Hierarchical naming: Модон бүтэцтэй. DNS бол үүний сонгодог жишээ. Дэлхий даяар өргөн хэрэглэгддэг.
+
+Attribute-based naming: Объектын шинж чанараар хайдаг. Жишээ нь “хоёрдугаар давхрын бүх принтерүүдийг хайх.” Энэ нь маш уян хатан боловч хэрэгжүүлэхэд төвөгтэй.
+
+6. Лавлах ба хайлтын үйлчилгээ (2 минут)
+
+Зөвхөн нэр хувиргах биш, заримдаа нөөцийн талаарх нэмэлт мэдээлэл хэрэгтэй болдог.
+
+Жишээлбэл:
+
+LDAP, Active Directory зэрэг нь зөвхөн нэрийг хаягт хувиргахаас гадна хэрэглэгчийн эрх, бүлгийн гишүүнчлэл гэх мэт мэдээллийг хадгалдаг.
+
+Эдгээр системүүд нь асуулга, шинэчлэлт болон хуулбарыг дэмждэг.
+
+7. Naming-ийн бэрхшээлүүд (2 минут)
+
+Нэршлийн системд тулгардаг сорилтууд:
+
+Scalability (Масштаблах чадвар): Интернетэд тэрбум гаруй төхөөрөмж байдаг. Систем энэ их нэрийг дэмжих ёстой.
+
+Mobility (Хөдөлгөөнт байдал): Гар утас, серверүүд байршлаа өөрчилсөн ч нэр хэвээр ажиллах ёстой.
+
+Replication (Хуулбар): Нэг нөөц олон хуулбартай байх үед зөв зохицуулах шаардлагатай.
+
+Security (Аюулгүй байдал): DNS spoofing зэрэг халдлагаас хамгаалахын тулд шифрлэл, баталгаажуулалт хэрэгтэй.
+
+8. Бодит жишээнүүд (1–2 минут)
+
+DNS: Интернетийн үндсэн нэршлийн систем. Бид өдөр бүр ашигладаг.
+
+DHCP: Динамик IP хаяг олгодог.
+
+Distributed File Systems (NFS, AFS): Нэг файлыг сүлжээгээр олон хэрэглэгчид нэрээр нь хялбархан ханддаг.
+
+Дүгнэлт (1–2 минут)
+
+Тэгэхээр, Naming бол тархсан системийн салшгүй хэсэг.
+
+Энэ нь объектуудад нэр өгч, түүнийг хаяг эсвэл тодорхойлогчтой холбож өгдөг.
+
+DNS, LDAP зэрэг системүүд бол бидний өдөр тутмын хэрэглээнд шууд хэрэглэгдэж байгаа жишээ.
+
+Харин томоохон сорилтууд бол масштаблах, хөдөлгөөнт чанар, хуулбарын нийцтэй байдал, аюулгүй байдал юм.
+
+Naming байхгүй бол тархсан системүүд бидний өнөөдөр мэдэх шигээр ажиллах боломжгүй байх байлаа.
+
+Баярлалаа, асуулт байвал хариулахад бэлэн байна.
+
+
+
+
+Slide 1 – Title Slide
+
+“Good [morning/afternoon], everyone. Today I will present Chapter 5 from Distributed Systems: Principles and Paradigms, which is about Naming.
+
+Naming is a fundamental concept in distributed systems because it determines how we find, access, and manage resources across a network. Over the next 15 minutes, I’ll walk you through the main ideas, challenges, and real-world examples of naming.”
+
+
+Slide 2 – Introduction
+
+“So, what is naming?
+
+In a distributed system, we have many different resources – files, devices, services, or processes. Naming is simply the act of assigning them names so we can identify and access them.
+
+For example, when you type google.com, you don’t need to know its IP address. That’s naming in action – making distributed systems usable.”
+
+
+Slide 3 – Role of Naming
+
+“Naming plays several important roles:
+
+Resource discovery: it helps us find resources without knowing their exact location.
+
+Human-friendly access: instead of numbers, we use meaningful names.
+
+Location independence: even if a resource moves, its name can stay the same.
+
+Scalability: as systems grow, naming allows management of billions of objects.
+
+So naming is much more than just labels—it enables distributed systems to function smoothly.”
+
+
+Slide 4 – Types of Names
+
+“There are three main types of names in distributed systems:
+
+Identifiers – unique and permanent, like process IDs.
+
+Addresses – show the location, such as IP addresses.
+
+Human-readable names – designed for people, like domain names or file paths.
+
+A good naming system connects all three, so a human-readable name maps to an address, and then to a unique identifier.”
+
+
+Slide 5 – Name Resolution
+
+“The process of converting a name into an address or identifier is called name resolution.
+
+For instance, when you type www.example.com
+, the DNS system converts it into an IP address so your browser can connect.
+
+Name resolution must be fast, reliable, and scalable, otherwise the whole distributed system would slow down.”
+
+
+
+Slide 6 – Naming Systems
+
+“Different distributed systems use different naming structures:
+
+Flat naming – simple but not scalable.
+
+Hierarchical naming – tree-like structures, like DNS, which is scalable worldwide.
+
+Attribute-based naming – search by properties, for example: ‘find all printers on the second floor.’
+
+The hierarchical approach, like DNS, is the most widely used because it balances simplicity and scalability.”
+
+
+Slide 8 – Challenges in Naming
+
+“Of course, naming comes with challenges:
+
+Scalability – the system must handle billions of names.
+
+Mobility – resources, like mobile devices, move between networks.
+
+Replication – if a resource exists in multiple places, the naming must stay consistent.
+
+Security – we must prevent attacks like DNS spoofing or name hijacking.
+
+So designing a naming system is not just technical, but also about security and reliability.”
+
+
+Slide 10 – Conclusion
+
+“To conclude, naming is a critical component of distributed systems.
+
+It allows us to:
+
+Identify and discover resources.
+
+Provide user-friendly access.
+
+Support scalability and mobility.
+
+Ensure reliability and security.
+
+Without naming, distributed systems would not be practical or usable. Systems like DNS, LDAP, and distributed file systems all show us how essential naming really is.”
