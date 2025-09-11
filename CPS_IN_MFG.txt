@@ -1,1 +1,464 @@
-ccsc
+📑 Summary
+Cyber-Physical Systems (CPS)
+    CPS are collaborating computational entities tightly connected to physical processes.
+    They monitor, control, and integrate operations through computing and communication.
+    The key aspect is the interaction (not just the union) of the physical and cyber worlds.
+    CPS examples include autonomous cars, robotic surgery, smart grids, intelligent buildings, and smart manufacturing.
+
+Cyber-Physical Production Systems (CPPS)
+    CPPS combine computer science (CS), ICT, and manufacturing science and technology (MST).
+    They are seen as the foundation of the 4th Industrial Revolution (Industry 4.0).
+    According to Germany’s BMBF, Industry 4.0 involves:
+        Highly flexible, large-scale production.
+        Strong product customization.
+        Integration of customers and business partners.
+        Hybrid products (combining physical goods and digital services).
+
+Parallel Developments
+    The paper highlights the convergence of:
+        Advances in CS and ICT.
+        Developments in manufacturing technology.
+    Roots of CPPS, case studies, and research challenges are introduced.
+
+1.1 Survey on Literature
+    A text-mining study analyzed CPS-related research (4236 unique papers).
+    Nearly 2000 papers were published between 2010–2015, showing rapid growth.
+
+Keyword Analysis Findings:
+    IoT + Security: Strongly connected → Security is one of the hottest issues in CPS/IoT.
+    Multi-agent systems: A common technique, strongly linked to the next generation of industrial systems.
+    RFID & Cloud computing: Widely used in IoT implementations.
+    Popular application areas: Smart grids, smart cities, logistics.
+    Other important techniques: Simulation and optimization.
+    Security’s neighbors: Privacy, trust management, access control.
+
+✅ In short:
+The introduction establishes CPS/CPPS as a core enabler of Industry 4.0, merging the physical and digital worlds. The literature survey shows rapid growth of CPS research, with security, IoT, multi-agent systems, RFID, and cloud computing as central themes, and applications spreading across smart infrastructure and manufacturing.
+
+2. Interplay between CS, ICT and manufacturing automation
+Parallel Development: Computer Science (CS), Information and Communication Technologies (ICT), and Manufacturing Science & Technology (MST) have developed side by side, each influencing the other.
+
+Key Contributions from CS & ICT to Manufacturing
+    Computers → Numerical Control (NC) of machine tools and robots.
+    Microprocessors → CNC (Computer Numerical Control) systems.
+    Computer Graphics → CAD (Computer-Aided Design) systems.
+    Computer Networks → Computer-Integrated Manufacturing (CIM), with databases as core.
+    Artificial Intelligence (AI) & Machine Learning (ML) → Intelligent Manufacturing Systems (IMS).
+    Computer Vision → Robotics (object/environment recognition).
+    Internet → Enabled collaboration (concurrent engineering, extended enterprises, supply chains, production networks).
+    Multi-Agent Systems (MAS) → Agent-based and Holonic Manufacturing Systems (HMS).
+    Wireless communication, sensor networks, IoT → High-resolution manufacturing, tracking, and tracing.
+    Embedded systems → Smart automation and product-service systems.
+    Semantic Web → Interoperability in manufacturing.
+    Cloud computing → Cloud services for manufacturing (with ontologies).
+    Grid computing → Grid manufacturing.
+
+Overall Insight
+    Developments in CS and ICT have significantly advanced manufacturing.
+    At the same time, the complex challenges of manufacturing stimulated new innovations in CS and ICT.
+    This led to a convergence of the physical and virtual worlds (the foundation of CPS/CPPS).
+
+✅ In short:
+Manufacturing automation evolved hand-in-hand with CS and ICT advances—from CNC and CAD to IoT, cloud, and AI—creating a two-way influence that drives the convergence of virtual (digital) and physical (production) system
+
+3. Cyber-physical systems and cyber-physical production systems
+3.1. Cyber-physical systems (CPS)
+
+
+Origins and Definition
+    CPS originate from embedded systems—specialized computer systems integrated into mechanical/electrical systems, operating under real-time constraints.
+    In CPS, multiple embedded devices are networked to sense, monitor, and actuate physical processes.
+    The term CPS emerged in 2006 at the first NSF Workshop on Cyber-Physical Systems (Austin, Texas)
+
+Key Goals (from NSF & NITRD Initiatives)
+    Develop dependable, efficient, and advanced engineered systems.
+    Enable safe, secure, and real-time interaction between physical systems and global networks.
+    Core idea: “Globally Virtual, Locally Physical” → local sensing/actuation + global networked control.
+
+Application Domains
+    CPS are applied in diverse areas, including:
+    Agriculture
+    Building automation
+    Defense
+    Energy & smart grids
+    Healthcare
+    Manufacturing & industry
+    Society services
+    Transportation (autonomous vehicles, logistics, etc.)
+
+Cross-Cutting Challenges
+    To succeed, CPS must address:
+        Cybersecurity
+        Economics (cost/benefit, scalability)
+        Interoperability
+        Privacy
+        Safety & reliability
+        Socio-technical aspects (human–machine collaboration)
+
+CPS Maturity Model (RWTH Aachen)
+    Levels of CPS maturity:
+        Setting basics – Build organizational/structural foundations.
+        Creating transparency – Real-time data availability.
+        Increasing understanding – Aggregate and process data into new knowledge.
+        Improving decision-making – Adapt CPS processes through collaboration.
+        Self-optimizing CPS – Independent, problem-solving, collaborative systems.
+
+✅ In short:
+CPS evolved from embedded systems into networked, intelligent systems that combine local physical interaction with global digital control. They are a strategic research priority in the U.S. and Germany, with applications across industry, energy, healthcare, and transport. Their development faces major challenges (security, privacy, interoperability), and maturity progresses from basic data use to fully self-optimizing, autonomous systems.
+
+3.2. Cyber-physical production systems (CPPS)
+
+Definition & Scope
+    CPPS are autonomous and cooperative systems linking all production levels—from processes and machines to logistics and networks
+
+Core Characteristics
+    Intelligence (Smartness): Elements sense their environment and act autonomously.
+    Connectedness: Elements connect and collaborate with other systems, humans, and Internet-based knowledge/services.
+    Responsiveness: Systems adapt to internal and external changes in real time.
+
+Key Research & Technical Challenges
+    Modeling and forecasting emergent behaviors.
+    Balancing autonomy, cooperation, optimization, and responsiveness.
+    Handling sensor networks, big data, and information retrieval/interpretation.
+    Addressing security issues.
+    Developing new human–machine communication methods.
+
+Architecture Evolution
+    Traditional automation pyramid is evolving into more decentralized architectures.
+        Lower levels (field/control): still rely on PLCs for high-performance control.
+        Higher levels: decentralized, networked, cyber-driven decision-making.
+    CPPS have two functional components:
+        Connectivity layer → Real-time data collection from physical world + feedback from cyber space.
+        Cyber layer → Intelligent data management, analytics, and computational functions.
+
+5C Architecture (5 Levels)
+    Smart Connection → Physical space, data acquisition.
+    Data-to-Information Conversion.
+    Cyber Layer → Data analytics and aggregation.
+    Cognition → Extract insights, knowledge generation.
+    Configuration → Feedback loop: cyber → physical (optimization, control).
+This structure shows how CPPS move from data acquisition → analytics → value creation.
+
+Strategic Importance
+    U.S. (PCAST 2012 Report): CPPS listed under top cross-cutting technologies (Advanced Sensing, Measurement, Process Control).
+    Germany (Industrie 4.0): CPPS are central to competitiveness. Key goals:
+        Horizontal integration across value networks.
+        End-to-end digital engineering across the value chain.
+        Vertical integration via networked manufacturing systems.
+
+✅ In short:
+CPPS are intelligent, connected, and responsive production systems that extend CPS concepts into manufacturing. They break with rigid automation hierarchies, favor decentralized and cyber-driven architectures, and rely on the 5C model (connection → conversion → cyber → cognition → configuration). Strategically, they are central to Industrie 4.0 and global competitiveness in manufacturing.
+
+3.3. CPS and CPPS as fundaments for Industrie 4.0
+
+📑 Summary
+Expectations from CPS
+    High robustness, safety, and reliability.
+    Self- capabilities*: self-organization, self-repair, self-maintenance, etc.
+    Real-time performance: control, diagnosis, navigation.
+    Transparency, predictability, efficiency, and correct models.
+
+CPS are expected to enable new business models and services, transforming many sectors:
+    Applications: transport (air/ground), production, logistics, healthcare, energy, infrastructure, entertainment.
+    Potential outcomes: smart cities, smart energy, smart logistics, smart homes, even a cyber-physical society (integration of human, social, and cultural dimensions with cyber + physical spaces).
+
+CPPS and the Fourth Industrial Revolution
+    CPPS seen as drivers of Industrie 4.0, following:
+        1st IR (mechanical loom, 1764).
+        2nd IR (Ford assembly line, 1913).
+        3rd IR (first PLC, 1968).
+        4th IR (CPPS/Industrie 4.0).
+
+    Industrie 4.0 Goal:
+        Mass customization → fulfill individual customer needs at mass-production costs.
+        Covers the whole value chain: from R&D to manufacturing, delivery, use, and recycling.
+        Based on digitization of production with CPPS.
+
+Smart Factories (Core Concept)
+    CPPS integrate workers, products, machines, and systems into smart, autonomous, self-organized entities.
+        Within global supply networks, CPPS autonomously:
+            Exchange information.
+            Trigger actions.
+            Control each other.
+    Benefits:
+        Personalized products.
+        Dynamic business & engineering process control.
+        Optimized decision-making.
+        Continuous improvement in productivity and efficiency.
+        New value-creation opportunities & business models.
+
+Standardization & I4.0 Components
+    In German Industrie 4.0 platform, CPS in manufacturing are represented as “I4.0-components”:
+        Each object has an administration shell → makes it an intelligent object.
+        Enables virtual representation of objects (types & instances).
+        Communicate via I4.0-compliant protocols.
+
+Ongoing German standardization → mapping I4.0 concepts onto existing global standards.
+
+✅ In short:
+CPS and CPPS form the backbone of Industrie 4.0, driving the Smart Factory vision. They combine autonomy, connectivity, real-time responsiveness, and self-organization to digitize and optimize the entire value chain. This leads to mass customization, higher efficiency, smart societies, and new business models, while ongoing standardization ensures interoperability at a global scale.
+
+4. Roots of CPPS in manufacturing
+📑 Summary
+Early Ideas of Intelligent Manufacturing
+    Intelligent Manufacturing Systems (IMS) (Hatvany & Nemes, late 1970s/80s):
+        Next-gen systems using AI & ML to handle unforeseen problems with incomplete info.
+        Applied pattern recognition, expert systems, neural networks, fuzzy systems.
+        Predicted agent-based (holonic) systems for managing complexity.
+    World-Wide IMS Programme (1992, Yoshikawa):
+        Broader view: foundation of global manufacturing science through international cooperation.
+
+Key Roots Leading to CPPS
+    Biological Manufacturing Systems (BMS, Ueda):
+        Inspired by biology → self-organization, adaptation, evolution.
+        Enabled dynamic reconfiguration when facing demand or machine changes.
+    Reconfigurable Manufacturing Systems (RMS, Koren):
+        Provide exact functionality and capacity when needed.
+        Support easy integration of new technologies.
+        Vital for environmental & sustainable manufacturing.
+    Digital Enterprise / Digital Factory:
+        Mapped business + technical processes into digital world.
+        Required real-time feedback from production.
+        Used discrete event simulation (DES) for:
+            Off-line validation,
+            On-line proactive recognition,
+            On-line reactive response.
+
+Agent-Based & Holonic Manufacturing Systems
+    Holonic Manufacturing Systems (HMS, Van Brussel & Valckenaers):
+        Autonomous, cooperative “holons” (resource, product, order).
+        PROSA architecture supports decentralized, flexible execution.
+        Inspired by natural systems (e.g. ant colonies) → robust under change.
+        Enable plug-and-produce systems with minimal configuration.
+        Viewed as a natural pathway to CPPS.
+
+Other Important Roots
+    Gentelligent Components (Denkena):
+        Combine genetic + intelligent properties.
+        Store, collect, and communicate lifecycle data (e.g., forces, temperatures).
+        Act as self-aware components in CPPS.
+    Emergent Synthesis (Ueda):
+        Based on Complex Adaptive Systems (CAS).
+        Collective behavior emerges from simple subsystems without central control.
+        Addresses incomplete specifications & uncertain environments → relevant to CPPS.
+    Changeable Production Structures (Wiendahl):
+        Entire factories (assembly, logistics, even buildings) must be changeable.
+        Introduced changeability as an umbrella for factory flexibility.
+    Co-evolution of Products, Processes, and Systems:
+        Responding to new regulations, materials, technologies, sustainability pressures.
+    Industrial Product-Service Systems (IPS²):
+        Hybrid of products + services across lifecycle.
+        Basis for smart, networked products using CPS.
+    Open-Architecture Products (OAPs):
+        Platforms with swappable modules, customizable by users.
+        Require cyber-enabled design tools for safe flexibility.
+    Cloud Computing:
+        Supports CPPS prognosis and predictive maintenance.
+        Enables real-time, cross-boundary data use.
+    Legacy System Integration:
+        Old systems need gateways/servers to join Industrie 4.0 environments.
+
+Big Picture & Challenges
+    Modern enterprises must operate in dense interaction networks.
+    They constantly adjust between model and reality.
+    Core challenges:
+        Competition vs. cooperation
+        Local autonomy vs. global behavior
+        Design vs. emergence
+        Planning vs. reactivity
+        Uncertainty vs. information overload
+    Key trend: Balanced solutions → cooperation + responsiveness, supported by interdisciplinary ICT + manufacturing research.
+
+✅ In short:
+The roots of CPPS lie in decades of research on intelligent, flexible, agent-based, reconfigurable, biologically inspired, and digital manufacturing systems. Concepts like holonic systems, gentelligent components, emergent synthesis, digital factories, and cloud computing all paved the way. Together, they established the foundation for changeable, adaptive, cooperative, and responsive manufacturing enterprises—essential characteristics of CPPS and Industrie 4.0.
+
+5. Towards standardized communication within CPPS
+Two Types of Data in CPPS
+    Configuration data → created during engineering, describes the physical part (machine/component structure, interfaces, topology).
+    Runtime data → generated during operation, describes real-time status of the process.
+
+5.1. Engineering and conﬁguration of CPPS
+5.1.1. Self description by the integration of AutomationML and OPCUA
+Key Standards
+    AutomationML (Automation Markup Language, IEC 62714)
+        Open standard for describing production plants & components.
+        Captures:
+            Skills, topology, interfaces
+            Geometry & kinematics
+            Logic & behavior
+    Used in Plug-and-Work scenarios (models exchanged between systems).
+    OPC UA (OPC Unified Architecture, IEC 62541)
+        Platform-independent standard for industrial communication.
+        Middleware linking engineering tasks ↔ runtime operations.
+        Handles:
+            Data management
+            Reliable, secure communication
+            Object-oriented information models
+
+Integration of AutomationML + OPC UA
+    A joint working group is creating a companion specification (“AutomationML in OPC UA”).
+    Synergy: AutomationML = what is described; OPC UA = how it is communicated.
+    Benefits of integration:
+        Online AutomationML models:
+            AutomationML models can be exchanged live via OPC UA.
+            Supports multi-user access, versioning, and security.
+            Useful for re-engineering & maintenance (up-to-date evolving models).
+        Simplified OPC UA model creation:
+            OPC UA information models can be derived from AutomationML data.
+        Seamless configuration exchange:
+            OPC UA server/client setup parameters described in AutomationML.
+            Eliminates manual configuration → fewer errors, faster setup.
+            Covers network topology, wiring, QoS, communication components
+Big Picture
+    Combining AutomationML (engineering format) with OPC UA (communication tech) enables:
+        Consistent and reliable configuration of CPPS.
+        Real-time, standardized, and secure exchange of data.
+        Foundation for Plug-and-Work, predictive maintenance, and adaptive production.
+✅ In short:
+AutomationML describes the content/structure of manufacturing systems, while OPC UA enables secure real-time communication. Their integration provides a standardized way for CPPS components to self-describe, communicate, and reconfigure dynamically, making engineering, operation, and maintenance more efficient.
+
+5.1.2. Plug-and-Work for Cyber-Physical Systems (CPS)
+
+Manufacturing objects that can change: products, processes, machines, IT systems, or organizational structures.
+Problem today: IT systems are manually adapted → slow, error-prone.
+Solution: Automate adaptation by:
+    Reading and interpreting self-descriptions of production equipment.
+    Enriching descriptions with digital factory data → bridging planning and operation.
+Goal: Enable high adaptivity of the manufacturing system
+
+5.1.3. Adaptivity via Plug-and-Work
+    Key idea: Connect new or modified entities without changing existing control applications.
+    Important entities:
+        Products and their manufacturing processes
+        Orders (customer intentions)
+        Production resources and components
+    Adaptation functions:
+        Integration → new controllable entities provide additional functionalities.
+        Modification → update existing entities to enhance functionality.
+        Extraction → remove entities and their functionalities.
+    Plug-and-Work leverages IoT/IoS and CPPS → semi-automatic, self-controlled integration.
+    Definition: Automatically identify and integrate new/modified components without manual effort or redesign.
+
+5.1.4. Plug-and-Work for Devices
+    Steps for automatic integration of physical resources (devices/modules/subsystems):
+        Physical connection → connect the resource to the network and prepare for reconfiguration.
+        Discovery → system detects the newly connected device.
+        Basic communication → establish initial channel to exchange device information.
+        Capability assessment → identify functionalities and requirements of the device.
+        Configuration → integrate device into the network for real-time operation and normal functioning.
+
+✅ In short:
+Plug-and-Work enables autonomous, adaptive, and error-free integration of products, resources, and devices into CPPS. It combines self-description, automated discovery, and configuration to reduce manual intervention and support flexible, smart manufacturing.
+
+5.2. Real time data from CPPS operation
+5.2.1. Data from Components
+    Distinguishes between:
+        Engineering data – e.g., self-descriptions of components (from Section 5.1).
+        Runtime data – sensor data collected during actual manufacturing operations.
+    Communication: Ideally, the same protocol is used for engineering and runtime, e.g.:
+        OPC UA – between PLC and MES
+        PROFINET – between components and PLC
+    Real-time requirement: Deterministic data exchange is crucial; e.g., the TPS-1 chip provides PROFINET-based real-time communication in Plug-and-Work system
+
+5.2.2. Data from PLCs and Entire Processes – Manufacturing Service Bus (MSB)
+    MSB vs ESB:
+        ESB (Enterprise Service Bus): For software application communication in traditional service-oriented architectures (SOA).
+        MSB (Manufacturing Service Bus): Adapted SOA for near real-time manufacturing operations (called Manufacturing 2.0). Handles high transaction volumes and parametric data loads.
+    Standards and integration:
+        ISA-95 provides a framework for integrating enterprise and control systems, defining terminology, information models, and operations models.
+        Facilitates communication between ERP, MES, PLC, and SCADA systems.
+    Applications:
+        MSB allows scalable communication across plants and production facilities.
+        Initiatives like Virtual Fort Knox provide cloud-based MSB services, connecting smart devices and services within or across factories.
+    Benefits:
+        Reduces manual data transformation.
+        Ensures consistent, fast, and real-time data exchange between all manufacturing entities.
+
+✅ In short:
+Real-time data in CPPS comes from components (sensors, devices) and process controllers (PLCs, MES). The Manufacturing Service Bus (MSB) ensures fast, standardized, and scalable communication, bridging smart devices, software, and even cross-enterprise manufacturing networks.
+
+6. Case studies
+
+Section 6 presents 10 case studies covering applications from sensor-level modules to production networks, illustrating CPPS/Industrie 4.0 implementation and company-specific strategy development.
+
+6.1 Cyber-physical Modules for Machine Tools
+    Focus on small/mid-batch production flexibility.
+    Mechatronic modules improve productivity and quality:
+        Passive devices – monitor process (e.g., 3D scanners).
+        Active devices – directly influence process (e.g., actuator tooling).
+Example: Tools with sensors detect chattering and adjust feed rates; RFID-equipped clamps enable part-specific parameter adaptation.
+
+6.2 Plug-and-Work Applications
+    6.2.1 WISARA Lab: Demonstrator for filling liquids; modules self-describe and communicate via Ethernet/OPC UA.
+    6.2.2 SecurePLUGandWORK:
+        Integrated, secured Plug-and-Work system across automation hierarchy.
+        Uses AutomationML and OPC UA for standardized communication.
+        Supports adaptive, role-based access, legacy integration, and security via adapters (e.g., BeagleBone Black).
+
+6.3 Real System & Virtual Environment Synchronization
+    Digital twin / simulation mirrors real system (SCADA interface) for decision support.
+    Automatic model building from PLC/controller data reduces manual updates.
+    Enables efficient “what-if” analyses and continuous simulation integration.
+
+6.4 Automated Process Plan Generation
+    Reduces manual planning efforts in small batch production.
+    Steps:
+        Initial process plan via CAPP software.
+        Adjustment using feedback from pilot production.
+        Fine-tuning of processing times.
+    Example: Deviation from plan reduced from 15% → 6%.
+
+6.5 Scheduling with Alternative Routings
+    Adaptive process planning integrates simulation and monitoring.
+    Handles resource conflicts and optimizes machine usage in CNC workshops.
+
+6.6 Adaptive Scheduling Using Product-specific Data
+    Products with RFID tags collect real-time production and resource data.
+    Data enables adaptive scheduling, improving delivery adherence and reducing idle times.
+    Example: Delivery adherence improved 74% → 93%; throughput deviation reduced from 17% → 2–3%.
+
+6.7 Cyber-physical Maintenance Support
+    Anticipative maintenance for automotive production (Opel).
+    Uses historical, real-time, and planning data for predictive strategies.
+    Maintenance control center optimizes quality, availability, and costs via rule-based reaction models.
+
+6.8 Cross-company Information Exchange
+    RFID-based early warning system enables adaptive production control across supply chains.
+    OEMs and suppliers synchronize production using smart product data.
+    Benefits: improved delivery dates, reduced stock buffers, faster rework.
+
+6.9 Pilot CPPS for Research & Education
+    Small-scale CPPS lab with conveyors, PLC-controlled workstations, mobile robots, RFID workpieces.
+    Integrates physical components, agents, and human interfaces for experimentation and education.
+
+6.10 Company-specific CPPS/Industrie 4.0 Strategy Development
+    Three-stage model: Envision → Enable → Enact
+        Envision: Develop company-specific vision aligned with objectives and customer needs.
+        Enable: Define strategic areas (customer, product, process) and roadmap using roadmapping techniques.
+        Enact: Translate strategies into concrete projects with milestones, resources, and risk assessment.
+    Outcome: Company-specific roadmap communicates CPPS/Industrie 4.0 vision internally and externally.
+
+✅ In short:
+The case studies demonstrate CPPS applications in machine tools, adaptive production, simulation, maintenance, cross-company integration, education, and strategy development, highlighting improvements in flexibility, productivity, planning, maintenance, and supply chain responsiveness through cyber-physical and smart manufacturing systems.
+
+7. R&D challenges
+📑 Summary of R&D Challenges in CPS/CPPS
+
+The expectations for Cyber-Physical Systems (CPS) and Cyber-Physical Production Systems (CPPS) are high, including: robustness, autonomy, self-organization, self-maintenance, transparency, predictability, efficiency, interoperability, and global traceability. Meeting even part of these goals is a major research challenge.
+
+Key Fundamental R&D Challenges
+    Time handling – Efficient management of time in programming languages, operating systems, and networks.
+    Computational dynamical systems theory – Hybrid modeling of physical systems (continuous theory) and cyber systems (computational theory).
+    Standardization – Essential for interoperability; requires cooperation among ICT stakeholders.
+    Security – Comprehensive hardware, software, and operational security for safe and reliable CPS.
+
+Additional CPPS-specific R&D Challenges
+    Context-adaptive & partially autonomous systems: Continuous awareness, plan recognition, self-awareness, and model creation for applications and domains.
+    Cooperative production systems: Consensus algorithms, distributed detection, and cooperative learning.
+    Identification & prediction of dynamical systems: Extend or create methods robust to mild assumptions and disturbances.
+    Robust scheduling: Handling production disturbances during execution.
+    Fusion of real and virtual systems: Synchronization of virtual and physical subsystems, intelligent shop-floor control, and resource-efficient algorithms.
+    Human–machine symbiosis: Integration of geometric data, sensor fusion, and fast adaptation to dynamic environments, including human–robot interaction.
+
+✅ In short:
+R&D in CPS/CPPS focuses on time management, hybrid modeling, standards, security, adaptive autonomy, cooperation, prediction, robust scheduling, virtual-real fusion, and human–machine integration to meet the high demands of modern smart production systems.
