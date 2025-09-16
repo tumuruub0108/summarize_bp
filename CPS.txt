@@ -1,4 +1,68 @@
 
+A Cyber-Physical System (CPS) is a system that integrates computing (cyber) and physical processes.
+
+Definition:
+
+A CPS is an engineered system where software, computation, and communication tightly interact with physical components (like machines, sensors, and actuators) in real time.
+
+
+maybe smart watch is very simple example
+
+🔹 Why it is CPS-like
+
+A smartwatch has:
+
+Physical components → sensors (heart rate, accelerometer, GPS), display, buttons.
+
+Cyber components → software apps, processing unit, communication with phone or cloud.
+
+Real-time interaction → it constantly monitors your heart rate, steps, or notifications and reacts immediately (vibration alerts, display updates).
+
+The word “synergic” comes from synergy.
+
+Synergy = when two or more things work together and produce a result that is greater than the sum of their individual effects.
+
+Synergic = describes actions, processes, or systems that work cooperatively to enhance each other’s performance.
+
+🔹 In CPS / Engineering Context
+
+Synergic often describes how physical and cyber components collaborate.
+
+Example:
+
+Sensors + computation + actuators working together synergically produce smarter, faster, or more reliable outcomes.
+
+In smart manufacturing, robots + IoT sensors + cloud analytics = synergic system.
+
+
+🔹 Why a self-automatic system can be CPS
+
+A Cyber-Physical System (CPS) requires:
+
+Physical components → machines, sensors, actuators
+
+Cyber components → software, computation, control algorithms
+
+Real-time interaction → continuous sensing, computation, and actuation
+
+Feedback loops → decisions affect the physical world, which is then sensed again
+
+Interconnectivity refers to the state or condition of being connected with each other, especially in systems, networks, or devices. It emphasizes the ability of multiple components to communicate, exchange data, and work together.
+
+🔹 General Meaning
+
+Interconnectivity = connection + communication
+
+Components are linked so that information or control can flow between them.
+
+Example in daily life:
+
+Your smartphone, smartwatch, and laptop are interconnected via Wi-Fi or Bluetooth.
+
+week3 ppt - what is IOT, how to relate cps
+
+
+
 
 ✅1.PARADIGM OF CYBER-PHYSICAL SYSTEMS
 📑 Summary: Paradigm of Cyber-Physical Systems
