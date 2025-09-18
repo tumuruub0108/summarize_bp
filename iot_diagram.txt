@@ -86,3 +86,74 @@ Manufacturing Analytics + IIoT → Cyber-Physical Systems (CPS)
     Dashboards show data clearly (Tableau, Power BI).
 
     Engineers make better decisions and analyze problems.
+
+
+багийн ppt 
+
+Slide 1: Title
+
+“Good [morning], everyone.
+My name is [Your Name], and today I will present on AI in Cyber-Physical Systems, with a particular focus on the role of Industrial IoT, or IIoT.
+
+This presentation was prepared together with my colleagues at the Distributed Networks and Systems Laboratory, Chonnam National University.”
+
+Slide 2: Introduction
+
+“To begin, let’s briefly discuss what IIoT is.
+
+The Industrial Internet of Things, or IIoT, is a specialized branch of IoT that connects sensors, devices, and industrial machines. These devices collect and transmit real-time data, enabling industries to monitor, automate, and optimize their processes.
+
+The benefits of IIoT are significant:
+
+improved worker safety,
+
+increased operational efficiency,
+
+better product quality,
+
+and stronger resilience and competitiveness.
+
+In fact, IIoT is considered a core component of Industry 4.0, transforming sectors such as manufacturing, transportation, energy, and agriculture.”
+
+Slide 3: Integrated Mind Map
+
+“This mind map shows how IIoT integrates with Cyber-Physical Systems.
+
+At the physical layer, we have machines, sensors, and actuators that interact with the environment. These devices are connected to the cyber layer, which includes networks, cloud platforms, and data processing systems.
+
+Artificial Intelligence then plays a key role in analyzing this data, making decisions, and sending instructions back to the physical systems.
+
+Together, this creates a closed feedback loop — sense, analyze, decide, and act — which is the foundation of modern cyber-physical systems.”
+
+Slide 4: IIoT Focus (Components)
+
+“Now, let’s focus more closely on the IIoT components.
+
+First, we have sensors and devices — these collect information like temperature, vibration, pressure, or images.
+Second, connectivity — technologies such as Wi-Fi, 5G, or industrial protocols like MQTT and OPC-UA help devices communicate.
+Third, data processing — edge computing handles tasks that require low latency, while cloud computing stores large volumes of data and runs advanced analytics.
+Finally, AI-driven analytics — here we apply machine learning to predict machine failures, detect defects, optimize energy use, and improve supply chains.”
+
+Slide 5: IIoT Focus (Outcomes)
+
+“Of course, the real value comes from the outcomes.
+
+With IIoT and AI in Cyber-Physical Systems, industries achieve:
+
+Operational efficiency: less downtime and smarter resource usage.
+
+Product quality: real-time defect detection and adaptive manufacturing.
+
+Safety and security: monitoring hazards and protecting workers.
+
+Resilience and competitiveness: faster recovery from failures, cost savings, and a stronger position in Industry 4.0.
+
+In short, IIoT and AI together are transforming industrial systems to be smarter, safer, and more efficient.”
+
+Slide 6: Closing
+
+“To conclude, Industrial IoT is not just about connecting machines — it’s about creating intelligent, data-driven systems that can learn, adapt, and optimize themselves.
+
+By integrating AI with Cyber-Physical Systems, industries can move closer to the full potential of Industry 4.0.
+
+Thank you very much for your attention. I will be happy to take any questions.”
