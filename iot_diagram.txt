@@ -1,0 +1,88 @@
+Manufacturing Analytics is the process of using data from manufacturing operations to understand, predict, and improve production performance.
+
+# Descriptive Analytics: What is happening now?
+    Monitors production in real-time.
+
+    Examples: machine utilization, defect rates, energy consumption.
+
+# Predictive Analytics: What might happen next?
+    Uses historical data and machine learning to forecast problems.
+
+    Examples: predicting equipment failures, production delays, or quality issues.
+
+# Prescriptive Analytics: What should we do?
+    Suggests actions to optimize production.
+
+    Examples: adjusting machine parameters automatically, scheduling maintenance, or reallocating resources.
+
+# Tools used in Manufacturing Analytics:
+    Machine Learning models: SVM, Decision Trees, Regression, Bayesian models.
+
+    Big Data platforms: Hadoop, Spark.
+
+    Visualization tools: Tableau, Power BI.
+
+# Why it’s important:
+    Improves efficiency, quality, and safety.
+
+    Reduces downtime and costs.
+
+    Supports smart, data-driven decision-making in manufacturing.
+
+Industrial Internet of Things (IIoT) is the use of connected sensors, machines, and devices in industrial settings to collect, exchange, and analyze data in real-time, enabling smarter and more efficient operations.
+
+# Sensors and Devices: Measure things like temperature, vibration, pressure, speed, or chemical composition in machines or processes.
+
+# Connectivity: Sensors and machines are connected via industrial networks like Ethernet, Wi-Fi, or protocols like OPC UA to transmit data.
+
+#Data Collection & Storage: Data is sent to databases, cloud platforms, or distributed systems for storage and processing.
+
+# Integration with Analytics: The collected data can be analyzed to monitor performance, predict failures, optimize production, or make decisions.
+
+# Key Features of IIoT:
+    Real-time monitoring of machines and processes.
+
+    Predictive maintenance and reduced downtime.
+
+    Automation through actuators based on data insights.
+
+    Enhanced operational efficiency and safety.
+
+
+diagramm tailbar bagsh ruu ywuulsan
+Manufacturing Analytics + IIoT → Cyber-Physical Systems (CPS)
+
+1. Physical Layer (Machines & Sensors)
+    Machines do the work.
+
+    Sensors measure things like temperature, vibration, pressure, and speed.
+
+    Actuators can adjust the machines automatically.
+
+2. IIoT / Connectivity Layer
+    Collects data from machines and sensors in real-time.
+
+    Sends data over networks (Ethernet, Wi-Fi).
+
+    Stores data in databases (cloud or on-site).
+
+3. Analytics Layer (Manufacturing Analytics)
+    Descriptive: Shows what’s happening right now.
+
+    Predictive: Forecasts future problems like machine failure.
+
+    Prescriptive: Suggests what to do to improve production.
+
+    Uses tools like machine learning models.
+
+4. Feedback & Control
+    Actuators automatically adjust machines.
+
+    Sends alerts to operators.
+
+    Optimizes production in real-time.
+
+5. Visualization & Decision Support
+    Dashboards show data clearly (Tableau, Power BI).
+
+    Engineers make better decisions and analyze problems.

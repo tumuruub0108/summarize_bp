@@ -20,9 +20,9 @@ Real-time interaction → it constantly monitors your heart rate, steps, or noti
 
 The word “synergic” comes from synergy.
 
-Synergy = when two or more things work together and produce a result that is greater than the sum of their individual effects.
+    Synergy = when two or more things work together and produce a result that is greater than the sum of their individual effects.
 
-Synergic = describes actions, processes, or systems that work cooperatively to enhance each other’s performance.
+    Synergic = describes actions, processes, or systems that work cooperatively to enhance each other’s performance.
 
 🔹 In CPS / Engineering Context
 
@@ -30,9 +30,9 @@ Synergic often describes how physical and cyber components collaborate.
 
 Example:
 
-Sensors + computation + actuators working together synergically produce smarter, faster, or more reliable outcomes.
+    Sensors + computation + actuators working together synergically produce smarter, faster, or more reliable outcomes.
 
-In smart manufacturing, robots + IoT sensors + cloud analytics = synergic system.
+    In smart manufacturing, robots + IoT sensors + cloud analytics = synergic system.
 
 
 🔹 Why a self-automatic system can be CPS
@@ -58,10 +58,6 @@ Components are linked so that information or control can flow between them.
 Example in daily life:
 
 Your smartphone, smartwatch, and laptop are interconnected via Wi-Fi or Bluetooth.
-
-week3 ppt - what is IOT, how to relate cps
-
-
 
 
 ✅1.PARADIGM OF CYBER-PHYSICAL SYSTEMS
