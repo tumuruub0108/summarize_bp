@@ -72,6 +72,7 @@ Jay Lee’s 2015 paper proposed the 5C architecture, which is one of the most wi
         Cognition, where analytics generate insights; and
 
         Configuration, where the system feeds back those insights to optimize operations.
+        
 This layered approach provides a roadmap for integrating CPS into Industry 4.0.”
 
 # 2
