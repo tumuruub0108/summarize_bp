@@ -22,3 +22,61 @@ The paper discusses various applications of the 5C architecture, including:
     Adaptive Control: Adjusting manufacturing processes in real-time based on data insights to improve efficiency and quality.
 
 By implementing the 5C architecture, manufacturing systems can achieve greater flexibility and responsiveness, aligning with the principles of Industry 4.0.
+
+
+
+Cyber-Physical Systems (CPS) in Industry 4.0
+│
+├── CPS Architectures & Foundations
+│   ├─ 5C Architecture (Lee et al.)
+│   │   ├─ Connection (sensors, devices)
+│   │   ├─ Conversion (signals → digital data)
+│   │   ├─ Cyber (data storage, cloud/edge computing)
+│   │   ├─ Cognition (analytics, decision-making)
+│   │   └─ Configuration (feedback & optimization)
+│   └─ Provides the general layered framework
+│
+├── Application:
+│   ├─ Process: Any discrete manufacturing operation (e.g., welding, milling, assembly)
+│   ├─ Goal: Ensure product quality and process certification
+│   ├─ Data Sources: multi-modal signals (current, voltage, vibration, temperature, speed, force, etc.)
+│   ├─ Methods: Machine learning, predictive modeling, sensor fusion, data analytics
+│   ├─ CPS Role:
+│   │   ├─ Connection: Sensors and controllers capture real-time data
+│   │   ├─ Cyber: Cloud/edge platforms integrate and manage process data
+│   │   ├─ Cognition: Models analyze signals for quality prediction and anomaly detection
+│   │   └─ Configuration: Feedback control adjusts machine parameters automatically
+│   └─ Contribution: Data-driven CPS framework for automated monitoring, certification, and adaptive
+│
+└── Cross-Cutting Themes
+    ├─ Data-driven decision making (analytics, ML)
+    ├─ Real-time monitoring & feedback
+    ├─ Sensor fusion & connectivity
+    ├─ Digital Twin as advanced CPS instance
+    ├─ Challenges:
+    │   ├─ Data volume & latency
+    │   ├─ Generalization to different machines/processes
+    │   ├─ Standardization & certification (especially in welding)
+    │   └─ Integration with industrial standards & real-time control
+    └─ Impact: Predictive maintenance, quality assurance,
+               adaptive control, higher manufacturing intelligence
+# 1
+Jay Lee’s 2015 paper proposed the 5C architecture, which is one of the most widely cited frameworks for CPS in manufacturing.
+    The architecture has five layers:
+        Connection, where sensors and devices gather raw data;
+
+        Conversion, where signals are transformed into usable digital information;
+
+        Cyber, where data are stored and computed, often in the cloud;
+
+        Cognition, where analytics generate insights; and
+
+        Configuration, where the system feeds back those insights to optimize operations.
+This layered approach provides a roadmap for integrating CPS into Industry 4.0.”
+
+# 2
+Their main goal is to ensure product quality and support process certification.
+
+CPS relies on multi-modal data, including signals like current, voltage, vibration, temperature, and machine parameters such as speed and feed rate. This data is analyzed using machine learning, predictive modeling, and sensor fusion to provide insights about process quality and machine health.
+
+The CPS framework has four key roles. Connection captures real-time data from sensors. Cyber integrates and manages the data in cloud or edge platforms. Cognition analyzes the data to predict quality and detect anomalies. Configuration feeds insights back to the machines, adjusting parameters automatically to maintain optimal performance.

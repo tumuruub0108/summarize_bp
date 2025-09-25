@@ -1,9 +1,0 @@
-2025-09-29
-
-5 NAMING 179	
-5.1 NAMES, IDENTIFIERS, AND ADDRESSES 180	
-5.2 FLAT NAMING 182	
-5.2.1 Simple Solutions 183	
-5.2.2 Home-Based Approaches 186	
-5.2.3 Distributed Hash Tables 188	
-5.2.4 Hierarchical Approaches 191	
